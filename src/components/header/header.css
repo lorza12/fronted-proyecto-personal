@@ -3,10 +3,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 100px;
 }
 
 .miniContainer__logoLink img{
   width: 200px;
+
 }
 
 .hederContainer1__Logo {
@@ -14,6 +16,7 @@
   justify-content: center;
   flex-grow: 2;
   padding-left: 430px;
+  margin-top: 20px;
 }
 
 .hederContainer1__extra {
@@ -24,8 +27,8 @@
   padding-right: 40px;
 }
 
-.hederContainer1__extra p{
-
+.hrHeader {
+  margin: 0;
 }
 
 .headerContainer2 {

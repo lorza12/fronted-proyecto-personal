@@ -77,11 +77,11 @@ const Header = () =>
         </p>
         </div>
         </section>
-        <hr color="#F5B2B8"/>
+        <hr className='hrHeader' color="#F5B2B8"/>
         <section className='headerContainer2'>
         <div className='headerContainer2__list'>
           <ol className='lists'>
-            <li>productos</li>
+            <li>Productos</li>
             <li>Rituales</li>
             <li>Blog</li>
           </ol>

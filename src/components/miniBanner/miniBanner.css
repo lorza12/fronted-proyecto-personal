@@ -1,0 +1,12 @@
+.miniBannerContainer{
+  padding: 80px;
+  color: #D8476B;
+  font-weight: 600;
+}
+
+.infoClientContainer__paragraf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBC87C;
+}
