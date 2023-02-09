@@ -3,6 +3,7 @@
 .App {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
+  background-color: #fff0de;
 }
 p::first-letter {
   text-transform: capitalize;

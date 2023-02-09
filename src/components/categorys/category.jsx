@@ -1,10 +1,9 @@
-import './category.css'
-
+import './category.css';
 
 const category = () => (
-    <section className="categoryContainer">
-      <p>Categoria</p>
-    </section>
-  )
+  <section className="categoryContainer">
+    <p>Categoria</p>
+  </section>
+);
 
-  export default category;
+export default category;

@@ -43,3 +43,12 @@
   color: #E58624;
 }
 
+.buttons__header {
+  background-color: transparent;
+  color: #E58624;
+  border: 0px;
+  padding: 0%;
+  margin: 16px;
+}
+
+

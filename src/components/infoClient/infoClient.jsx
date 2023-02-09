@@ -1,10 +1,9 @@
-import './infoClient.css'
-
+import './infoClient.css';
 
 const infoClient = () => (
-    <section className="infoClientContainer">
-      <p>Informacion clientes</p>
-    </section>
-  )
+  <section className="infoClientContainer">
+    <p>Informacion clientes</p>
+  </section>
+);
 
-  export default infoClient;
+export default infoClient;

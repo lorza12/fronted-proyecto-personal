@@ -3,7 +3,7 @@ import './bannerRedes.css';
 const bannerRedes = () => (
   <section>
     <section>
-      <hr className='hrBannerRedes' color='F5B2B8'/>
+      <hr className="hrBannerRedes" color="F5B2B8" />
       <div className="bannerRedesContainer__title">
         <h1>INSPÍRATE CON @VELEFANT_</h1>
       </div>

@@ -1,10 +1,9 @@
-import './blog.css'
-
+import './blog.css';
 
 const blog = () => (
-    <section className="blogContainer">
-      <p>blog</p>
-    </section>
-  )
+  <section className="blogContainer">
+    <p>blog</p>
+  </section>
+);
 
-  export default blog;
+export default blog;
