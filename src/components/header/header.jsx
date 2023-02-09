@@ -2,7 +2,6 @@ import Types from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
-// import { useEffect, useState } from 'react';
 import { RxAvatar } from 'react-icons/rx';
 import { TfiShoppingCartFull } from 'react-icons/tfi';
 import { BsSearch } from 'react-icons/bs';
@@ -11,23 +10,12 @@ import { setProducts } from '../../feactures/products/productoSlice';
 import ShoppingCart from '../shoppingCart/shoppingCart';
 import Badge from '../badge/badge';
 import { selectAuth } from '../../feactures/login/authLoginSlice';
-// import getMyProfile from '../../services/user';
 
 const Header = ({ toggle, open }) => {
-  // const data = useSelector((state) => state.product);
-  // const [profile, setProfile] = useState(null);
   const navegat = useNavigate();
   const dispatch = useDispatch();
   const { isAuth } = useSelector(selectAuth);
   console.log('🚀 ~ file: header.jsx:19 ~ Header ~ isAuth', isAuth);
-
-  // useEffect(() => {
-  //   const fetchProfile = async () => {
-  //     const data = await getMyProfile();
-  //     setProfile(data);
-  //   };
-  //   fetchProfile();
-  // }, []);
 
   const ClickRituls = () => {
     navegat('/');
@@ -40,17 +28,9 @@ const Header = ({ toggle, open }) => {
     navegat('/products');
     dispatch(setProducts());
   };
-  // const clearCart = () => {
-  // };
   const ClickBlog = () => {
     navegat('/');
   };
-  // const ClickLogin = () => {
-  //   navegat('/login');
-  // };
-  // const handleAppoiment = () => {
-  //   navegat(`/appointment`);
-  // };
 
   return (
     <section>
@@ -67,10 +47,10 @@ const Header = ({ toggle, open }) => {
           <p>
             <RxAvatar color="#D8476B" />
           </p>
-          <div className="icon-badge">
+          <div className="headerContainer1__icon-cart">
             <p>
               <button
-                className=""
+                className="butto_cart"
                 type="button"
                 onClick={toggle}
               >
@@ -83,11 +63,15 @@ const Header = ({ toggle, open }) => {
           </div>
         </div>
       </section>
-      {open && (
-        <section>
-          <ShoppingCart />
-        </section>
-      )}
+      <section className='headerContainer1__cart'>
+        <div className="headerContainer1__cart-into">
+          {open && (
+            <section>
+              <ShoppingCart />
+            </section>
+          )}
+        </div>
+      </section>
       <hr className="hrHeader" color="#F5B2B8" />
       <section className="headerContainer2">
         <div className="headerContainer2__list">

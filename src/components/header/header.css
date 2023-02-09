@@ -51,4 +51,15 @@
   margin: 16px;
 }
 
+.headerContainer1__icon {
+  position: relative;
+
+}
+
+.headerContainer1__cart{
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
 
