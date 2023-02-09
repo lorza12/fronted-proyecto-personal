@@ -1,0 +1,54 @@
+.hederContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.miniContainer__logoLink img{
+  width: 200px;
+
+}
+
+.hederContainer1__Logo {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  padding-left: 430px;
+  margin-top: 20px;
+}
+
+.hederContainer1__extra {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 30px;
+  padding-right: 40px;
+}
+
+.hrHeader {
+  margin: 0;
+}
+
+.headerContainer2 {
+  display: flex;
+  justify-content: center;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  color: #E58624;
+}
+
+.buttons__header {
+  background-color: transparent;
+  color: #E58624;
+  border: 0px;
+  padding: 0%;
+  margin: 16px;
+}
+
+

@@ -1,0 +1,15 @@
+.productsContainer img {
+  width: 200px;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.productsContainer__cart {
+  display: flex;
+  /* flex-direction: column; */
+}
