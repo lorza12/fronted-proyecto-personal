@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import Footerr from './components/footerr/footerr';
 import Home from './pages/home/home';
 import Products from './pages/products/products';
 import ProductDetail from './pages/productDetail/productDetail';
@@ -40,7 +40,7 @@ const App = () => {
           />
         </Routes>
       </section>
-      <Footer />
+      <Footerr />
     </div>
   );
 };
