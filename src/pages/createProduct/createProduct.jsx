@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 // import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { createProd } from '../../feactures/products/productAPI';
+import './createProduct.css';
 
 const URL = process.env.REACT_APP_API_URL;
 

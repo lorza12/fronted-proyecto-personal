@@ -35,35 +35,82 @@ const Header = ({ toggle, open }) => {
   return (
     <section>
       <section className="hederContainer1">
-        <div className="hederContainer1__Logo">
+        <div className="hederContainer1__search">
+          <p>
+            <BsSearch color="#D8476B" />
+          </p>
+        </div>
+        <div className="hederContainer1__products">
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickProducts}
+          >
+            Productos
+          </button>
+        </div>
+        <div className="hederContainer1__kits">
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickProducts}
+          >
+            Kits
+          </button>
+        </div>
+        <div className="hederContainer1__logo">
           <Link to="/" className="miniContainer__logoLink">
             <img src={velefantLogo} alt="logo" />
           </Link>
         </div>
+        <div className="hederContainer1__products">
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickRituls}
+          >
+            Rituales
+          </button>
+        </div>
+        <div className="hederContainer1__kits">
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickBlog}
+          >
+            Blog
+          </button>
+        </div>
+        <div className="hederContainer1__creatProducts">
+          {isAuth && (
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickCreateProduct}
+          >
+            Agregar producto
+          </button>
+          )}
+        </div>
         <div className="hederContainer1__extra">
-          <p>
-            <BsSearch color="#D8476B" />
-          </p>
-          <p>
-            <RxAvatar color="#D8476B" />
-          </p>
-          <div className="headerContainer1__icon-cart">
+          <div>
             <p>
-              <button
-                className="butto_cart"
-                type="button"
-                onClick={toggle}
-              >
+              <RxAvatar color="#D8476B" />
+            </p>
+          </div>
+          <div className="headerContainer1__icon-cart">
+            <div className="cartt">
+              <button className="butto_cart" type="button" onClick={toggle}>
                 <TfiShoppingCartFull color="#D8476B" />
               </button>
-            </p>
-            <p>
+            </div>
+            <div className="bodge">
               <Badge />
-            </p>
+            </div>
           </div>
         </div>
       </section>
-      <section className='headerContainer1__cart'>
+      <section className="headerContainer1__cart">
         <div className="headerContainer1__cart-into">
           {open && (
             <section>
@@ -72,51 +119,9 @@ const Header = ({ toggle, open }) => {
           )}
         </div>
       </section>
-      <hr className="hrHeader" color="#F5B2B8" />
-      <section className="headerContainer2">
-        <div className="headerContainer2__list">
-          <ol className="lists">
-            <li>
-              <button
-                className="buttons__header"
-                type="button"
-                onClick={ClickProducts}
-              >
-                Productos
-              </button>
-            </li>
-            <li>
-              <button
-                className="buttons__header"
-                type="button"
-                onClick={ClickRituls}
-              >
-                Rituales
-              </button>
-            </li>
-            <li>
-              <button
-                className="buttons__header"
-                type="button"
-                onClick={ClickBlog}
-              >
-                Blog
-              </button>
-            </li>
-            <li>
-              {isAuth && (
-                <button
-                  className="buttons__header"
-                  type="button"
-                  onClick={ClickCreateProduct}
-                >
-                  Agregar producto
-                </button>
-              )}
-            </li>
-          </ol>
-        </div>
-      </section>
+      <div className="hrHeader">
+        <hr color="#D8476B" />
+      </div>
     </section>
   );
 };
