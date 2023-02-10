@@ -4,6 +4,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100px;
+
 }
 
 .miniContainer__logoLink img{
@@ -11,24 +12,20 @@
 
 }
 
-.hederContainer1__Logo {
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  padding-left: 430px;
-  margin-top: 20px;
-}
-
 .hederContainer1__extra {
   display: flex;
   justify-content: flex-end;
-  flex-grow: 1;
-  gap: 30px;
+  align-items: center;
+  /* gap: 30px; */
   padding-right: 40px;
 }
 
 .hrHeader {
   margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 0.5;
+
 }
 
 .headerContainer2 {
@@ -39,16 +36,58 @@
 .lists {
   list-style: none;
   display: flex;
-  gap: 100px;
+  /* gap: 100px; */
   color: #E58624;
 }
 
 .buttons__header {
   background-color: transparent;
-  color: #E58624;
+  color: #D8476B;
   border: 0px;
   padding: 0%;
   margin: 16px;
 }
 
+.headerContainer1__icon {
+  position: relative;
+
+}
+
+.headerContainer1__cart{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.headerContainer1__cart-into{
+  position: absolute;
+  background-color: rgb(252, 247, 241);
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.butto_cart {
+  background-color: transparent;
+  border: 0;
+}
+
+.headerContainer1__icon-cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bodge{
+  /* position: absolute; */
+
+}
+.shopping-cart-items{
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.spanBadge{
+  border-radius: 50%;
+  background-color: white;
+
+}
 

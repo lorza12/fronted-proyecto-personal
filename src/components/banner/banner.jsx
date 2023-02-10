@@ -1,8 +1,9 @@
 import './banner.css';
+import image from './assest/Banner1.png';
 
 const banner = () => (
   <section className="bannerContainer">
-    <p>Banner</p>
+    <img src={image} alt="banner" />
   </section>
 );
 

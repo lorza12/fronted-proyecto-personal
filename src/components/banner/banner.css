@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  background-color: coral;
+  background-color: #F8D9A6;
+  margin-bottom: 20px;
+}
+
+.bannerContainer img{
+  max-width: 100%;
+  /* height: 500px; */
 }

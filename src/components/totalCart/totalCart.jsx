@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './total.css';
 
 const totalCart = () => {
   const [total, setTotal] = useState(0);
@@ -26,10 +27,12 @@ const totalCart = () => {
   return (
     <section>
       <div>
-        <p>total {total}</p>
+        <p>SUBTOTAL: ${total}
+        </p>
       </div>
       <div>
         <button
+          className="button-sub"
           type="button"
           onClick={handleClick}
         >Ir a pagar

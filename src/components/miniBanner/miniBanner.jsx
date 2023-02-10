@@ -1,13 +1,26 @@
 import './miniBanner.css';
+import { useNavigate } from 'react-router-dom';
+import image from './assest/Velaa-07.png';
+import image2 from './assest/vela sola-07.png';
 
-const miniBanner = () => (
-  <section>
+const miniBanner = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/products');
+  };
+
+  return (
     <section className="miniBannerContainer">
-      <div className="infoClientContainer__paragraf">
-        <p>&bull; LA MAGIA ESTA EN TI  &bull;</p>
+      <div className="infoClientContainer__vela">
+        <img src={image} alt="Minibanner" className="fondo" />
+        <button type="button" className="buttonVerMas" onClick={handleClick}>
+          Ver mas
+        </button>
+        <p><img src={image2} alt="Minibanner" className="vela" /></p>
       </div>
     </section>
-  </section>
-);
+  );
+};
 
 export default miniBanner;

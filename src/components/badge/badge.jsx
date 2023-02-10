@@ -6,7 +6,7 @@ const badge = () => {
   return (
     <ul className="shopping-cart-items">
       {item.map((element) => (
-        <span>{element.amount}</span>
+        <span className="spanBadge">{element.amount}</span>
       ))}
     </ul>
   );
