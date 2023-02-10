@@ -1,0 +1,42 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 300px;
+}
+
+.listsFooter{
+  list-style: none;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.footerContainer {
+  background-color: rgb(245, 179, 184, .3) ;
+
+}
+
+h1 {
+  color: #D8476B;
+}
+
+.lineaVelefant {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerContainer__parrafo p {
+  opacity: 0.8;
+}
+
+.parrafoVelefant {
+  opacity: 0.7;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
