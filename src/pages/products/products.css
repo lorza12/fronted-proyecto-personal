@@ -4,12 +4,27 @@
 
 .productsContainer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
   gap: 50px;
+}
+
+.productsContainer__products{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin: 5%;
+  gap: 50px
+
+
+
 }
 
 .productsContainer__cart {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button__product{
+  width: 150px;
 }

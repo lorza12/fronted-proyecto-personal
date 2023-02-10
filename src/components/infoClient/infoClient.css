@@ -2,6 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  background-color: #ffe4c4;
+  background-color: #FAC77C;
+
+}
+
+.infoContainer__img{
+position: relative;
+top: 10px;
+}
+
+.infoClientContainer img {
+  max-width: 100%;
+  ;
 }

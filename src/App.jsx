@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/header';
-import Footer from './components/fooTer/fooTerr';
+import Footerr from './components/fooTer/fooTerr';
 import Home from './pages/home/home';
 import Products from './pages/products/products';
 import ProductDetail from './pages/productDetail/productDetail';
@@ -22,23 +22,25 @@ const App = () => {
       <header className="App-header">
         <Header toggle={toggle} open={open} />
       </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/product-detail/:_id" element={<ProductDetail />} />
-        <Route path="/form-pay" element={<FormPay />} />
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/create-product"
-          element={(
-            <RequireAuth>
-              <CreateProduct />
-            </RequireAuth>
+      <section className="App-home">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/product-detail/:_id" element={<ProductDetail />} />
+          <Route path="/form-pay" element={<FormPay />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/create-product"
+            element={(
+              <RequireAuth>
+                <CreateProduct />
+              </RequireAuth>
           )}
-        />
-      </Routes>
-      <Footer />
+          />
+        </Routes>
+      </section>
+      <Footerr />
     </div>
   );
 };
