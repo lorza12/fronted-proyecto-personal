@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/header';
-import Footerr from './components/footerr/footerr';
+import Footerr from './components/fooTer/fooTerr';
 import Home from './pages/home/home';
 import Products from './pages/products/products';
 import ProductDetail from './pages/productDetail/productDetail';
