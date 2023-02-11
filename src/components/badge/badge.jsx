@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import './badge.css';
 
 const badge = () => {
   const item = useSelector((state) => state.cart.productItem);

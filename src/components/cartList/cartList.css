@@ -1,19 +1,19 @@
 .shoppingCartList__1 {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
 }
 
-.ulCart {
+.ulCart{
   padding: 0;
 }
-
 .shoppingCartList__items img {
-  width: 100px;
+  width: 150px;
 }
 
 .shoppingCartList__description {
-  font-size: 10px;
+  font-size: 16px;
+
 }
 
 .hr__cart {
@@ -27,7 +27,7 @@
 .shoppingCartList__coment {
   display: flex;
   flex-direction: column;
-  opacity: 0.5;
+  opacity: 0.9;
   gap: 5px;
 }
 

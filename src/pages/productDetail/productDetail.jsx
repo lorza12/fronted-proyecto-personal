@@ -29,22 +29,19 @@ const productDetail = () => {
               <h1>{data.tittle}</h1>
               <p>Aromatizadora</p>
               <br />
+              <p className="paragrafh">{data.description}</p>
+              <br />
               <p><GrFormSubtract /> 1 <MdOutlineAdd /></p>
               <br />
               <p>$ {data.price}</p>
               <br />
               <p><BsHeart />Agregar a favoritos</p>
               <button type="button" className="productDetButton" onClick={() => dispatch(addCart(data))}>
-                agregar al carrito
+                Agregar al carrito
               </button>
             </div>
 
           </div>
-        )}
-      </section>
-      <section className="productDetailCont__info-description">
-        {data && (
-        <p>{data.description}</p>
         )}
       </section>
     </section>

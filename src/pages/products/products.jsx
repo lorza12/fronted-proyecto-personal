@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setProducts } from '../../feactures/products/productoSlice';
+import imgTitle from './assest/4elementos-04.png';
 
 import './products.css';
 
@@ -29,7 +30,7 @@ const products = () => {
       <section className="productsContainer">
         <section className="productsContainer__title">
           <h1 className="productsContainer__title__h1">
-            Velas aromaticas
+            <img src={imgTitle} alt="title" />
           </h1>
           <p>
             Nos gusta cerrar los ojos, respirar profundo
@@ -43,7 +44,6 @@ const products = () => {
           {data.map((element) => (
             <div className="productsContainer__cart">
               <img className="" src={element.image} alt="" />
-              <p key={element}>{element.tittle}</p>
               <button
                 type="button"
                 className="button__product"

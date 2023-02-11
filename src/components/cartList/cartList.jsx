@@ -13,8 +13,7 @@ const cartList = () => {
               <img className="image" src={element.image} alt="" />
             </div>
             <div className="shoppingCartList__description">
-              <p>{element.description}</p>
-              <br />
+              <p>{element.tittle}</p>
               <br />
               <br />
               <p>$ {element.price}</p>

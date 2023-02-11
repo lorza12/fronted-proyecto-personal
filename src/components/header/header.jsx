@@ -32,11 +32,15 @@ const Header = ({ toggle, open }) => {
     navegat('/');
   };
 
+  const ClickLogin = () => {
+    navegat('/login');
+  };
+
   return (
     <section>
       <section className="hederContainer1">
         <div className="hederContainer1__search">
-          <p>
+          <p className="ppp">
             <BsSearch color="#D8476B" />
           </p>
         </div>
@@ -94,18 +98,22 @@ const Header = ({ toggle, open }) => {
         </div>
         <div className="hederContainer1__extra">
           <div>
-            <p>
-              <RxAvatar color="#D8476B" />
-            </p>
+            <button type="button" className="butto_cart" onClick={ClickLogin}>
+              <p className="ppp">
+                <RxAvatar color="#D8476B" />
+              </p>
+            </button>
           </div>
           <div className="headerContainer1__icon-cart">
             <div className="cartt">
               <button className="butto_cart" type="button" onClick={toggle}>
-                <TfiShoppingCartFull color="#D8476B" />
+                <p className="ppp">
+                  <TfiShoppingCartFull color="#D8476B" className="iconnn" />
+                </p>
               </button>
             </div>
             <div className="bodge">
-              <Badge />
+              <Badge className="bodge" />
             </div>
           </div>
         </div>
@@ -113,7 +121,7 @@ const Header = ({ toggle, open }) => {
       <section className="headerContainer1__cart">
         <div className="headerContainer1__cart-into">
           {open && (
-            <section>
+            <section className="cartInto">
               <ShoppingCart />
             </section>
           )}

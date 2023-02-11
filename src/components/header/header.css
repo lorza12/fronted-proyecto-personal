@@ -16,8 +16,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* gap: 30px; */
+  gap: 20px;
   padding-right: 40px;
+  margin-top: 30px;
 }
 
 .hrHeader {
@@ -26,6 +27,10 @@
   padding-right: 100px;
   opacity: 0.5;
 
+}
+
+.ppp{
+  font-size: 30px;
 }
 
 .headerContainer2 {
@@ -46,6 +51,7 @@
   border: 0px;
   padding: 0%;
   margin: 16px;
+  font-size: 20px;
 }
 
 .headerContainer1__icon {
@@ -64,6 +70,10 @@
   background-color: rgb(252, 247, 241);
   display: flex;
   flex-direction: row-reverse;
+
+}
+
+.cartInto{
   padding: 10px;
 }
 
@@ -75,18 +85,25 @@
 .headerContainer1__icon-cart {
   display: flex;
   align-items: center;
+
+}
+
+.cartt{
   position: relative;
 }
 .bodge{
-  /* position: absolute; */
+position: absolute;
+
 
 }
+
 .shopping-cart-items{
   padding: 15px;
   margin-bottom: 5px;
 }
 .spanBadge{
   border-radius: 50%;
+  margin-left: 30px;
   background-color: white;
 
 }

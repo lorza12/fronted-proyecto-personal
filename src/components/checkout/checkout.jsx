@@ -35,7 +35,7 @@ const Checkout = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="checkoutForm" onSubmit={handleSubmit}>
       <CardElement />
       <button type="submit">Pay</button>
     </form>
