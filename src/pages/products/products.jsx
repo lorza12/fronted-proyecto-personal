@@ -41,7 +41,7 @@ const products = () => {
           </p>
         </section>
         <section className="productsContainer__products">
-          {data && data.map((element) => (
+          {data.map((element) => (
             <div className="productsContainer__cart">
               <img className="" src={element.image} alt="" />
               <button
