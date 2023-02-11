@@ -42,7 +42,7 @@ const products = () => {
         </section>
         <section className="productsContainer__products">
           {data.map((element) => (
-            <div className="productsContainer__cart">
+            <div className="productsContainer__cart" key={element._id}>
               <img className="" src={element.image} alt="" />
               <button
                 type="button"
