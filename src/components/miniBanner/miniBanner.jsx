@@ -13,11 +13,11 @@ const miniBanner = () => {
   return (
     <section className="miniBannerContainer">
       <div className="infoClientContainer__vela">
-        <img src={image} alt="Minibanner" className="fondo" />
+        <img src={image} loading="eager" alt="Minibanner" className="fondo" />
         <button type="button" className="buttonVerMas" onClick={handleClick}>
           Ver mas
         </button>
-        <p><img src={image2} alt="Minibanner" className="vela" /></p>
+        <p><img src={image2} loading="eager" alt="Minibanner" className="vela" /></p>
       </div>
     </section>
   );
