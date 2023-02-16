@@ -10,7 +10,7 @@ const cartList = () => {
         {item.map((element) => (
           <div className="shoppingCartList__1">
             <div className="shoppingCartList__items">
-              <img className="image" src={element.image} alt="" />
+              <img className="image" src={element.image} loading="eager" alt="imgCart" />
             </div>
             <div className="shoppingCartList__description">
               <p>{element.tittle}</p>

@@ -64,7 +64,7 @@ const Header = ({ toggle, open }) => {
         </div>
         <div className="hederContainer1__logo">
           <Link to="/" className="miniContainer__logoLink">
-            <img src={velefantLogo} alt="logo" />
+            <img src={velefantLogo} loading="eager" alt="logo" />
           </Link>
         </div>
         <div className="hederContainer1__products">
@@ -87,13 +87,13 @@ const Header = ({ toggle, open }) => {
         </div>
         <div className="hederContainer1__creatProducts">
           {isAuth && (
-          <button
-            className="buttons__header"
-            type="button"
-            onClick={ClickCreateProduct}
-          >
-            Agregar producto
-          </button>
+            <button
+              className="buttons__header"
+              type="button"
+              onClick={ClickCreateProduct}
+            >
+              Agregar producto
+            </button>
           )}
         </div>
         <div className="hederContainer1__extra">
