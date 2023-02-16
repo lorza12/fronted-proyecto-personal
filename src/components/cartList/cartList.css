@@ -1,0 +1,39 @@
+.shoppingCartList__1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.ulCart{
+  padding: 0;
+}
+.shoppingCartList__items img {
+  width: 150px;
+}
+
+.shoppingCartList__description {
+  font-size: 16px;
+
+}
+
+.hr__cart {
+  width: 95%;
+  height: 0;
+  border: medium none;
+  border-top: 1px dashed rgb(0, 0, 0);
+  opacity: 0.3;
+}
+
+.shoppingCartList__coment {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+  gap: 5px;
+}
+
+.button_shopping {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 30px;
+}

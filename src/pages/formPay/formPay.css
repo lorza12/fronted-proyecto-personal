@@ -1,0 +1,79 @@
+
+.formPayContainer{
+  display: flex;
+  flex-direction: wrap;
+  gap: 100px;
+  background-color: rgb(255, 234, 208);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.formPayContainer__form{
+  width: 600px;
+}
+
+.imageinfoPay {
+  width: 300px;
+
+}
+
+.destinatario{
+  width: 300px;
+  height: 30px;
+}
+
+.name-last{
+  width: 146px;
+  height: 30px;
+}
+
+.destinatarios{
+  width: 95px;
+  height: 30px;
+}
+
+.span{
+  font-size: 16px;
+  color: rgb(255, 147, 24);
+}
+
+.span1{
+  font-size: 16px;
+}
+
+.headerFormPay{
+  display: flex;
+  gap: 10px 60px;
+
+}
+
+.headerFormPay img{
+  width: 200px;
+}
+
+.button_shopping{
+  width: 300px;
+  opacity: 0.5;
+}
+
+.button_shopping2{
+  background-color: rgb(170, 167, 163);
+  width: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 30px;
+}
+
+.formPayContainer__infoPay{
+  padding: 10px;
+}
+
+.Finalizar{
+  color: white;
+  background-color: #D8476B;
+  border: none;
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,25 @@
+.containerPayment{
+
+}
+
+.StripeElement.StripeElement--empty{
+  height: 100px;
+  width: 100x;
+
+}
+
+.pasarela-pay{
+  background-color: azure;
+  width: 500px;
+  font-size: 24px;
+}
+
+.__PrivateStripeElement{
+  font-size: 24px;
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

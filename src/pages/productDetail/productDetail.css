@@ -1,0 +1,41 @@
+.productDetailCont{
+
+}
+
+.infoDescription{
+padding-bottom: 20px;
+padding-left: 50px;
+}
+
+.paragrafh{
+  color: #D8476B;
+  padding-right: 250px;
+}
+
+.productDetalCont__info img{
+  width: 600px;
+}
+
+.cont5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+
+
+}
+
+.productDetButton{
+  color: white;
+  background-color: #D8476B;
+  border: none;
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.cont__img {
+  padding-left: 200px;
+}

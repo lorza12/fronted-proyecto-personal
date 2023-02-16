@@ -1,0 +1,17 @@
+.infoClientContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAC77C;
+
+}
+
+.infoContainer__img{
+position: relative;
+top: 10px;
+}
+
+.infoClientContainer img {
+  max-width: 100%;
+  ;
+}

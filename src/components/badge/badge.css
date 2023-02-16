@@ -1,0 +1,11 @@
+.badge-cart-items{
+  width: 15px;
+  height: 25px;
+  color: white;
+  padding: 0;
+  border-radius: 100%;
+  background-color: #D8476B;
+  border: 10px;
+  border-color: black;
+  text-align: center;
+}

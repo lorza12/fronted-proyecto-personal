@@ -1,0 +1,23 @@
+.hrBannerRedes {
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+}
+
+.bannerRedesContainer__title {
+  text-align: center;
+}
+
+.bannerRedesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.bannerRedesContainer__img {
+  flex-grow: 1;
+  text-align: center;
+}
+

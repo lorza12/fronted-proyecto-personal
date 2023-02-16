@@ -1,0 +1,55 @@
+.agendContainer{
+  background-color: #FAC77C;
+  width: 100%;
+}
+
+.agendContainer__agend{
+  position: relative;
+}
+
+.agendContainer img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+
+}
+
+/* .agendContainer img:hover{
+  transform: scale(1.5);
+} */
+
+.AgendVerMas{
+  position: absolute;
+  top: 80%;
+  right: 8%;
+}
+
+.agendContainer__agend p{
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  top: -5%;
+  transition: all 300ms;
+}
+
+.agendContainer__agend p:hover{
+  transform: scale(1.08);
+}
+
+.AgendVerMas{
+  color: #F8D9A6;
+  font-size: 25px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10%;
+  background-color: #D7476B;
+  width: 180px;
+  height: 50px;
+  transition: all 300ms;
+}
+
+.buttonVerMas:hover{
+  transform: scale(1.08);
+}
+

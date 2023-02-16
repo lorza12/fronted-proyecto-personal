@@ -1,0 +1,111 @@
+.hederContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+
+}
+
+.miniContainer__logoLink img{
+  width: 200px;
+
+}
+
+.hederContainer1__extra {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+.hrHeader {
+  margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 0.5;
+
+}
+
+.ppp{
+  font-size: 30px;
+}
+
+.headerContainer2 {
+  display: flex;
+  justify-content: center;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  /* gap: 100px; */
+  color: #E58624;
+}
+
+.buttons__header {
+  background-color: transparent;
+  color: #D8476B;
+  border: 0px;
+  padding: 0%;
+  margin: 16px;
+  font-size: 20px;
+}
+
+.headerContainer1__icon {
+  position: relative;
+
+}
+
+.headerContainer1__cart{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.headerContainer1__cart-into{
+  position: absolute;
+  background-color: rgb(252, 247, 241);
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.cartInto{
+  padding: 10px;
+}
+
+.butto_cart {
+  background-color: transparent;
+  border: 0;
+  width: 50px;
+}
+
+.headerContainer1__icon-cart {
+  display: flex;
+  align-items: center;
+
+}
+
+.cartt{
+  position: relative;
+}
+.bodge{
+position: absolute;
+
+
+}
+
+.shopping-cart-items{
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.spanBadge{
+  border-radius: 50%;
+  margin-left: 30px;
+  background-color: white;
+
+}
+
