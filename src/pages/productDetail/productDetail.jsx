@@ -1,3 +1,4 @@
+import Types from 'prop-types';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -8,7 +9,7 @@ import { getProdu } from '../../feactures/products/productoSlice';
 import { addCart } from '../../feactures/cart/cartSlice';
 import './productDetail.css';
 
-const productDetail = () => {
+const productDetail = ({ toggle }) => {
   const params = useParams();
   const data = useSelector((state) => state.product.detail);
   const dispatch = useDispatch();
@@ -36,7 +37,16 @@ const productDetail = () => {
               <p>$ {data.price}</p>
               <br />
               <p><BsHeart />Agregar a favoritos</p>
-              <button type="button" className="productDetButton" onClick={() => dispatch(addCart(data))}>
+              <button
+                type="button"
+                className="productDetButton"
+                onClick={() => {
+                  const f2 = toggle;
+                  const f1 = dispatch(addCart(data));
+                  f2();
+                  f1();
+                }}
+              >
                 Agregar al carrito
               </button>
             </div>
@@ -46,6 +56,11 @@ const productDetail = () => {
       </section>
     </section>
   );
+};
+
+productDetail.propTypes = {
+  toggle: Types.func.isRequired,
+  open: Types.bool.isRequired,
 };
 
 export default productDetail;

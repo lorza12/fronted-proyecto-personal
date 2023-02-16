@@ -14,8 +14,7 @@ const cartList = () => {
             </div>
             <div className="shoppingCartList__description">
               <p>{element.tittle}</p>
-              <br />
-              <br />
+              <p>{element.amount}</p>
               <p>$ {element.price}</p>
             </div>
           </div>

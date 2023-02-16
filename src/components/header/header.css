@@ -80,6 +80,7 @@
 .butto_cart {
   background-color: transparent;
   border: 0;
+  width: 50px;
 }
 
 .headerContainer1__icon-cart {
