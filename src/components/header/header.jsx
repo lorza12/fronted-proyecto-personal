@@ -112,12 +112,15 @@ const Header = ({ toggle, open }) => {
                 </p>
               </button>
             </div>
-            <div className="bodge">
-              <Badge className="bodge" />
-            </div>
+          </div>
+          <div className="bodge">
+            <Badge className="bodge" />
           </div>
         </div>
       </section>
+      <div className="hrHeader">
+        <hr color="#D8476B" />
+      </div>
       <section className="headerContainer1__cart">
         <div className="headerContainer1__cart-into">
           {open && (
@@ -127,9 +130,6 @@ const Header = ({ toggle, open }) => {
           )}
         </div>
       </section>
-      <div className="hrHeader">
-        <hr color="#D8476B" />
-      </div>
     </section>
   );
 };
