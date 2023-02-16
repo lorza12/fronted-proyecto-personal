@@ -75,7 +75,7 @@ const createProduct = () => {
       <section className="container-form">
         <div className="container-form__load-data">
           <form onSubmit={handleSubmit}>
-            {image ? <img src={preview} onClick={upLoadFiles} alt="images" width="500" /> : null }
+            {image ? <img src={preview} onClick={upLoadFiles} loading="eager" alt="images" width="500" /> : null}
             <input
               type="file"
               className="input__Selectimage"

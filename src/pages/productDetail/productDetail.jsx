@@ -23,7 +23,7 @@ const productDetail = () => {
         {data && (
           <div className="cont5">
             <div className="cont__img">
-              <img className="image" src={data.image} alt="" />
+              <img className="image" src={data.image} loading="eager" alt="" />
             </div>
             <div className="infoDescription">
               <h1>{data.tittle}</h1>
