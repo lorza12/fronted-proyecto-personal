@@ -1,8 +1,15 @@
-import { useSelector } from 'react-redux';
+/* eslint-disable no-shadow */
+import { useDispatch, useSelector } from 'react-redux';
 import './cartList.css';
+import { RiDeleteBinLine } from 'react-icons/ri';
+import { GrFormSubtract } from 'react-icons/gr';
+import { MdOutlineAdd } from 'react-icons/md';
+import { DeleteItem, incrementAmount, decrementAmount } from '../../feactures/cart/cartSlice';
 
 const cartList = () => {
   const item = useSelector((state) => state.cart.productItem);
+  console.log('🚀 ~ file: cartList.jsx:9 ~ cartList ~ item', item);
+  const dispatch = useDispatch();
 
   return (
     <section className="shoppingCartList">
@@ -14,8 +21,36 @@ const cartList = () => {
             </div>
             <div className="shoppingCartList__description">
               <p>{element.tittle}</p>
-              <p>{element.amount}</p>
+              <div className="counterCart">
+                <button
+                  type="button"
+                  aria-label="save"
+                  className="buttonsCart"
+                  onClick={() => dispatch(decrementAmount(element._id))}
+                >
+                  <GrFormSubtract />
+                </button>
+                <p>{element.amount}</p>
+                <button
+                  type="button"
+                  aria-label="save"
+                  className="buttonsCart"
+                  onClick={() => dispatch(incrementAmount(element._id))}
+                >
+                  <MdOutlineAdd />
+                </button>
+              </div>
               <p>$ {element.price}</p>
+              <div className="iconButtonDelete">
+                <button
+                  type="button"
+                  className="buttonsCart"
+                  aria-label="Save"
+                  onClick={() => dispatch(DeleteItem(element._id))}
+                >
+                  <RiDeleteBinLine className="delectIcon" />
+                </button>
+              </div>
             </div>
           </div>
         ))}
