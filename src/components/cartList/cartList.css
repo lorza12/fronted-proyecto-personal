@@ -37,3 +37,27 @@
   border: none;
   height: 30px;
 }
+
+.counterCart{
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #081F2D;
+  min-width: 100px;
+  width: 100px;
+  height: 30px;
+}
+
+.buttonsCart{
+  background-color: transparent;
+  width: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 30px;
+}
+
+.delectIcon{
+  font-size: 25px;
+}
