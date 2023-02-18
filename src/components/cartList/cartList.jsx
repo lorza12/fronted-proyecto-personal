@@ -8,7 +8,7 @@ const cartList = () => {
     <section className="shoppingCartList">
       <ul className="ulCart">
         {item.map((element) => (
-          <div className="shoppingCartList__1">
+          <div className="shoppingCartList__1" key={element._id}>
             <div className="shoppingCartList__items">
               <img className="image" src={element.image} loading="eager" alt="" />
             </div>

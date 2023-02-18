@@ -60,38 +60,38 @@ const formPay = () => {
             <div className="headerFormPay">
               <img className="imageinfoPay" src={element.image} loading="eager" alt="" />
               <p>{element.tittle}</p>
-              <p> ${total}</p>
+              <p> ${element.price}</p>
             </div>
             <hr />
-            <button type="button" className="button_shopping">
-              Agregar cupon de descuento
-            </button>
-            <button type="button" className="button_shopping2">
-              Usar
-            </button>
-            <hr />
-            <div className="subTotal">
-              <p>SUBTOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </>
+        ))}
+        <button type="button" className="button_shopping">
+          Agregar cupon de descuento
+        </button>
+        <button type="button" className="button_shopping2">
+          Usar
+        </button>
+        <hr />
+        <div className="subTotal">
+          <p>SUBTOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;$ {total}
-              </p>
-            </div>
-            <p>Envios <RiQuestionFill /></p>
-            <hr />
-            <p>Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+        <p>Envios <RiQuestionFill /></p>
+        <hr />
+        <p>Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               &nbsp;cop {total}
-            </p>
-          </>
-        ))}
+        </p>
       </section>
     </section>
   );

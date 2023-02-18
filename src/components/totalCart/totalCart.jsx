@@ -7,7 +7,6 @@ const totalCart = () => {
   const [total, setTotal] = useState(0);
   const navigate = useNavigate();
   const item = useSelector((state) => state.cart.productItem);
-  console.log('🚀 ~ file: totalCart.jsx:11 ~ totalCart ~ m', item);
   window.localStorage.setItem('total', total);
 
   const totalProduct = () => {
@@ -18,15 +17,8 @@ const totalCart = () => {
     return totalPrice;
   };
 
-  const price = item.map((element) => {
-    return element.price;
-  });
-  const amount = item.map((element) => {
-    return element.amount;
-  });
-
   useEffect(() => {
-    setTotal(price * Number(amount));
+    setTotal(totalProduct);
   });
 
   const handleClick = () => {
@@ -36,7 +28,7 @@ const totalCart = () => {
   return (
     <section>
       <div>
-        <p>SUBTOTAL: ${totalProduct()}
+        <p>SUBTOTAL: ${total}
         </p>
       </div>
       <div>
