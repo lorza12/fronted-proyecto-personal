@@ -42,9 +42,8 @@ const productDetail = ({ toggle }) => {
                 className="productDetButton"
                 onClick={() => {
                   const f2 = toggle;
-                  const f1 = dispatch(addCart(data));
                   f2();
-                  f1();
+                  dispatch(addCart(data));
                 }}
               >
                 Agregar al carrito

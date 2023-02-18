@@ -15,7 +15,6 @@ const Header = ({ toggle, open }) => {
   const navegat = useNavigate();
   const dispatch = useDispatch();
   const { isAuth } = useSelector(selectAuth);
-  console.log('🚀 ~ file: header.jsx:19 ~ Header ~ isAuth', isAuth);
 
   const ClickRituls = () => {
     navegat('/');
