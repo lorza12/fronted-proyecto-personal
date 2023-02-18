@@ -11,6 +11,7 @@ import Payment from './pages/payment/payment';
 import Login from './pages/login/login';
 import CreateProduct from './pages/createProduct/createProduct';
 import RequireAuth from './feactures/login/requiereAuth';
+import Signup from './pages/Signup/Signup';
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/form-pay" element={<FormPay />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
           <Route
             path="/create-product"
             element={(

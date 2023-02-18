@@ -7,7 +7,6 @@ import { selectAuth } from './authLoginSlice';
 const RequireAuth = ({ children, roles }) => {
   const navigate = useNavigate();
   const { isAuth, profile } = useSelector(selectAuth);
-  console.log('🚀 ~ file: requiereAuth.jsx:9 ~ RequireAuth ~ profile', profile);
   if (!isAuth) {
     return (
       <Modal

@@ -78,12 +78,12 @@ const Login = () => {
                   checked={checked}
                   onChange={handleCheck}
                 />
-                Remember me
+                Recordar contraseña
               </label>
             </span>
             <span className="loginForm__span">
               <Link to="/sign-up" className="loginForm__link">
-                no user yet? Sign up here
+                Eres nuevo? Crea tu cuenta aqui
               </Link>
             </span>
           </div>

@@ -18,11 +18,9 @@ const createProduct = () => {
   };
   const navigate = useNavigate();
   const [image, setImage] = useState();
-  console.log('🚀 ~ file: createProduct.jsx:9 ~ createProduct ~ image', image);
   const [text, setText] = useState();
-  console.log('🚀 ~ file: createProduct.jsx:10 ~ createProduct ~ text', text);
   const [upload, setUpLoad] = useState();
-  console.log('🚀 ~ file: createProduct.jsx:11 ~ createProduct ~ upload', upload);
+  console.log('🚀 ~ file: createProduct.jsx:23 ~ createProduct ~ upload', upload);
   const [preview, setPreview] = useState('');
 
   useEffect(() => {
@@ -65,7 +63,6 @@ const createProduct = () => {
     };
     const response = await fetch(`${URL}/api/upload/file`, options);
     const resp = await response.json();
-    console.log('🚀 ~ file: createProduct.jsx:37 ~ handleSubmit ~ resp', resp.url);
     setUpLoad(resp.url);
     await createProd({ ...text, image: resp.url });
   };
