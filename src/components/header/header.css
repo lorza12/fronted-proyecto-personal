@@ -75,6 +75,7 @@
 
 .cartInto{
   padding: 10px;
+  box-shadow: 3px 3px 5px 5px rgb(137, 131, 131);
 }
 
 .butto_cart {
