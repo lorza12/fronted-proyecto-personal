@@ -1,9 +1,8 @@
 import './banner.css';
-import image from './assest/Banner1.png';
 
 const banner = () => (
   <section className="bannerContainer">
-    <img src={image} loading="eager" alt="banner" />
+    <img src="https://res.cloudinary.com/df4snwy5t/image/upload/v1677079380/dataFiles/Banner1_m2x8ya.png" loading="eager" alt="banner" />
   </section>
 );
 
