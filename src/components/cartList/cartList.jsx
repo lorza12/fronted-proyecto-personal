@@ -40,7 +40,11 @@ const cartList = () => {
                   <MdOutlineAdd />
                 </button>
               </div>
-              <p>$ {element.price}</p>
+              <p>
+                $
+                {' '}
+                {element.price}
+              </p>
               <div className="iconButtonDelete">
                 <button
                   type="button"

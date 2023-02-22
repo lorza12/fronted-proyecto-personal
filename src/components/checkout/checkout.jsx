@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import Modal from '../../pages/modal/modal';
 import './checkout.css';
 
+const URL = process.env.REACT_APP_API_URL;
+
 const Checkout = () => {
   const elements = useElements();
   const stripe = useStripe();
@@ -21,7 +23,6 @@ const Checkout = () => {
     });
 
     if (!error) {
-      console.log(paymentMethod);
       const options = {
         method: 'POST',
         headers: {
@@ -30,34 +31,36 @@ const Checkout = () => {
         body: JSON.stringify({
           paymentMethod,
           amount: Math.floor(total * 100), // total.toFixed(2)
+          // amount: 10_000,
         }),
       };
       try {
-        const response = await fetch('http://localhost:8080/api/payment', options);
+        const response = await fetch(`${URL}/api/payment`, options);
+        console.log(response);
         const data = await response.json();
-        setValor(true);
+        console.log('data', data.message);
+        setValor(response.status);
         return data;
       } catch (err) {
-        setValor(false);
-        setTimeout(() => {
-          setValor(true);
-        }, 2000);
+        return err;
       }
     }
   };
 
   return (
     <section>
-      {valor === true ? (
+      {valor === 200 ? (
         <Modal
           text="pago realizado"
           button={() => navigate('/')}
           textButton="Ir al inicio"
         />
       ) : null }
-      {valor === false ? (
+      {valor === 500 ? (
         <Modal
           text="pago rechazado"
+          button={() => navigate('/')}
+          textButton="Regresar"
         />
       ) : null }
       <form className="checkoutForm" onSubmit={handleSubmit}>

@@ -10,7 +10,7 @@ const RequireAuth = ({ children, roles }) => {
   if (!isAuth) {
     return (
       <Modal
-        text="Must login first"
+        text="Debes registrarte primero"
         button={() => navigate('/login')}
         textButton="Login"
       />
