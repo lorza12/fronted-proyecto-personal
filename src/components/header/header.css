@@ -30,7 +30,7 @@
 }
 
 .ppp{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .headerContainer2 {
@@ -38,12 +38,6 @@
   justify-content: center;
 }
 
-.lists {
-  list-style: none;
-  display: flex;
-  /* gap: 100px; */
-  color: #E58624;
-}
 
 .buttons__header {
   background-color: transparent;
@@ -51,7 +45,13 @@
   border: 0px;
   padding: 0%;
   margin: 16px;
-  font-size: 20px;
+  font-size: 28px;
+  transition: all 300ms;
+}
+
+.buttons__header:hover {
+  opacity: 0.6;
+  transform: scale(1.08);
 }
 
 .headerContainer1__icon {
@@ -82,6 +82,12 @@
   background-color: transparent;
   border: 0;
   width: 50px;
+  transition: all 300ms;
+}
+
+.butto_cart:hover {
+  opacity: 0.6;
+  transform: scale(1.08);
 }
 
 .headerContainer1__icon-cart {

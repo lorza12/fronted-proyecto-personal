@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  background-color: #E48524;
+  background-color: #F8D9A6;
 
 }
 
@@ -14,7 +14,7 @@
   text-align: end;
   align-items: center;
   width: 100%;
-  color: #F8D9A6;
+  color: #eda025;
   justify-content: center;
   gap: 20px;
 
@@ -22,6 +22,10 @@
 
 .expeContainer__img{
 
+}
+
+.expeContainer__p p{
+  font-size: 10px;
 }
 .expeContainer img{
   width: 100%;
@@ -36,8 +40,7 @@
 }
 
 .expeContainer__text {
-  display: flex;
-  flex-direction: row;
+  padding: 20px;
 }
 
 .hrTexr{
@@ -54,9 +57,6 @@
   display: flex;
   text-align: start;
   align-items: center;
-  margin-left: 1%;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 0;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 500;
 }
