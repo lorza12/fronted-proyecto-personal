@@ -1,33 +1,37 @@
 import Types from 'prop-types';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { BsHeart } from 'react-icons/bs';
-import { MdOutlineAdd } from 'react-icons/md';
-import { GrFormSubtract } from 'react-icons/gr';
+// import { MdOutlineAdd } from 'react-icons/md';
+// import { GrFormSubtract } from 'react-icons/gr';
 import { getProdu } from '../../feactures/products/productoSlice';
-import { addCart, incrementAmount, decrementAmount } from '../../feactures/cart/cartSlice';
+import {
+  addCart,
+  // incrementAmount,
+  // decrementAmount,
+} from '../../feactures/cart/cartSlice';
 import './productDetail.css';
 
 const productDetail = ({ toggle }) => {
   const params = useParams();
-  const [totalAmount, setTotalAmount] = useState();
+  // const [totalAmount, setTotalAmount] = useState();
   const data = useSelector((state) => state.product.detail);
-  const item = useSelector((state) => state.cart.productItem);
+  // const item = useSelector((state) => state.cart.productItem);
 
   const dispatch = useDispatch();
 
-  const totalAmoun = () => {
-    let totalPrice = 1;
-    item.forEach((element) => {
-      totalPrice = element.amount;
-    });
-    return totalPrice;
-  };
+  // const totalAmoun = () => {
+  //   let totalPrice = 1;
+  //   item.forEach((element) => {
+  //     totalPrice = element.amount;
+  //   });
+  //   return totalPrice;
+  // };
 
-  useEffect(() => {
-    setTotalAmount(totalAmoun);
-  });
+  // useEffect(() => {
+  //   setTotalAmount(totalAmoun);
+  // });
 
   useEffect(() => {
     dispatch(getProdu(params._id));
@@ -47,8 +51,9 @@ const productDetail = ({ toggle }) => {
               <br />
               <p className="paragrafh">{data.description}</p>
               <br />
-              <dvi className="counterCart">
-                <button
+              {/* <dvi className="counterCart"> */}
+              <p className="quantity"> {data.quantity} unidades disponibles</p>
+              {/* <button
                   type="button"
                   aria-label="save"
                   className="buttonsCart"
@@ -64,12 +69,15 @@ const productDetail = ({ toggle }) => {
                   onClick={() => dispatch(incrementAmount(data._id))}
                 >
                   <MdOutlineAdd />
-                </button>
-              </dvi>
+                </button> */}
+              {/* </dvi> */}
               <br />
               <p>$ {data.price}</p>
               <br />
-              <p><BsHeart />Agregar a favoritos</p>
+              <p>
+                <BsHeart />
+                Agregar a favoritos
+              </p>
               <button
                 type="button"
                 className="productDetButton"
@@ -82,7 +90,6 @@ const productDetail = ({ toggle }) => {
                 Agregar al carrito
               </button>
             </div>
-
           </div>
         )}
       </section>
