@@ -1,3 +1,4 @@
+
 .loginForm__globalContainer {
   display: flex;
   justify-content: center;
@@ -47,10 +48,16 @@
   margin-top: -0.3em;
 }
 
-.loginForm__link {
-  color: #565656;
-  text-decoration-color: lightgray;
+.loginForm__link{
+  opacity: 0.7;
+  color: black;
+  text-decoration: none;
+}
+
+.loginForm__link:hover {
+  color: #D8476B;
   font-size: 17px;
+
 }
 
 .loginForm__btn {

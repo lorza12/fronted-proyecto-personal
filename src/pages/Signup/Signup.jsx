@@ -57,14 +57,14 @@ const Signup = () => {
       {isOpen && <Terms />}
       <div className="signupForm__globalContainer">
         <form className="signupForm__container" onSubmit={handleSubmit}>
-          <h1 className="signupForm__title">Register</h1>
+          <h1 className="signupForm__title">Registro</h1>
           <label htmlFor="firstName" className="signupForm__label">
             Nombre
             <input
               type="text"
               name="firstName"
               className="signupForm__input"
-              placeholder="First Name"
+              placeholder="Ingrese su nombre"
               required
             />
           </label>
@@ -74,7 +74,7 @@ const Signup = () => {
               type="text"
               name="lastName"
               className="signupForm__input"
-              placeholder="Last Name"
+              placeholder="Ingrese sus apellido"
               required
             />
           </label>
@@ -84,7 +84,7 @@ const Signup = () => {
               type="email"
               name="email"
               className="signupForm__input"
-              placeholder="Enter your email"
+              placeholder="Ingrese su correo"
               required
             />
           </label>
@@ -94,7 +94,7 @@ const Signup = () => {
               type="password"
               name="password"
               className="signupForm__input"
-              placeholder="Enter your password"
+              placeholder="Ingrese una contraseña"
               required
             />
           </label>
