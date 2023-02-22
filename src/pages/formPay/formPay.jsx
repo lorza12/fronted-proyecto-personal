@@ -100,7 +100,8 @@ const formPay = () => {
           <p>
             Informacion de
             contacto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <spas className="span1">¿Ya tienes una cuenta?</spas>&nbsp;
+            <spas className="span1">¿Ya tienes una cuenta?</spas>
+&nbsp;
             <Link to="/login" className="goLogin">
               <spas className="span">inicia sesion</spas>
             </Link>
@@ -224,7 +225,9 @@ const formPay = () => {
           <br />
           <br />
           <label>
-            <input type="checkbox" id="cbox1" value="first_checkbox" /> Guardad
+            <input type="checkbox" id="cbox1" value="first_checkbox" />
+            {' '}
+            Guardad
             mi informacion
           </label>
           <br />
@@ -267,7 +270,11 @@ const formPay = () => {
                 alt=""
               />
               <p>{element.tittle}</p>
-              <p> ${element.price}</p>
+              <p>
+                {' '}
+                $
+                {element.price}
+              </p>
             </div>
             <hr />
           </>
@@ -287,12 +294,15 @@ const formPay = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;${' '}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;$
+            {' '}
             {total}
           </p>
         </div>
         <p>
-          Envios <RiQuestionFill />
+          Envios
+          {' '}
+          <RiQuestionFill />
         </p>
         <hr />
         <p>
@@ -301,7 +311,8 @@ const formPay = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;cop{' '}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;cop
+          {' '}
           {total}
         </p>
       </section>

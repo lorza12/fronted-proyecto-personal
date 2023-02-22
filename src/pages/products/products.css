@@ -20,6 +20,11 @@
   font-size: 18px;
 }
 
+.productsContainer__section2{
+ display: flex;
+ flex-wrap: wrap
+}
+
 .productsContainer__products{
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -27,7 +32,9 @@
   gap: 50px;
   background-color: #fccc7e;
   border-radius: 10%;
-
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .productsContainer__cart {
