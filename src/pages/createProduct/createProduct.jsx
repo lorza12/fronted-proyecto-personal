@@ -70,53 +70,65 @@ const createProduct = () => {
   return (
     <section>
       <section className="container-form">
-        <div className="container-form__load-data">
-          <form onSubmit={handleSubmit}>
-            {image ? <img src={preview} onClick={upLoadFiles} loading="eager" alt="images" width="500" /> : null}
-            <input
-              type="file"
-              className="input__Selectimage"
-              name="image"
-              onChange={handleChangeImage}
-            />
-            <h1>titulo</h1>
-            <input
-              type="text"
-              className="tittle"
-              name="tittle"
-              onChange={handleChangeData}
-            />
-            <h1>cantidad</h1>
-            <input
-              type="text"
-              className="quantity"
-              name="quantity"
-              onChange={handleChangeData}
-            />
-            <h1>description</h1>
-            <input
-              type="text"
-              className="description"
-              name="description"
-              onChange={handleChangeData}
-            />
-            <h1>precio</h1>
-            <input
-              type="text"
-              className="price"
-              name="price"
-              onChange={handleChangeData}
-            />
-            <button
-              type="submit"
-            >
-              Agregar
-            </button>
-          </form>
-
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="container-form__load-data">
+            <div className="container-form__load-data-img">
+              {image ? <img src={preview} onClick={upLoadFiles} loading="eager" alt="images" width="300" /> : null}
+              <br />
+              <br />
+              <input
+                type="file"
+                className="input__Selectimage"
+                name="image"
+                onChange={handleChangeImage}
+              />
+            </div>
+            <div className="container-form__load-data-text">
+              <h1>Nombre del producto</h1>
+              <input
+                type="text"
+                className="tittle"
+                name="tittle"
+                placeholder="Agregue un titulo"
+                onChange={handleChangeData}
+              />
+              <h1>cantidad</h1>
+              <input
+                type="text"
+                className="quantity"
+                name="quantity"
+                placeholder="Unidades del producto"
+                onChange={handleChangeData}
+              />
+              <h1>descricción</h1>
+              <input
+                type="text"
+                className="description"
+                name="description"
+                placeholder="Descricción"
+                onChange={handleChangeData}
+              />
+              <h1>precio</h1>
+              <input
+                type="text"
+                className="price"
+                name="price"
+                placeholder="Valor del producto"
+                onChange={handleChangeData}
+              />
+              <br />
+              <br />
+              <hr />
+              <button
+                type="submit"
+                className="createProduct"
+              >
+                Agregar producto
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
-
     </section>
   );
 };

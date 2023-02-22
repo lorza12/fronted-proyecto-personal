@@ -46,24 +46,24 @@ const Login = () => {
       {errorMessage === true ? <Modal text="Wrong Credentials" /> : null}
       <div className="loginForm__globalContainer">
         <form onSubmit={handleSubmit} className="loginForm__container">
-          <h1 className="loginForm__title">Login</h1>
+          <h1 className="loginForm__title">Ingresar</h1>
           <label htmlFor="user" className="loginForm__label">
-            login
+            Correo
             <input
               className="loginForm__input"
               type="email"
               name="email"
-              placeholder="email"
+              placeholder="Ingrese su correo electronico"
               required
             />
           </label>
           <label htmlFor="password" className="loginForm__label">
-            Password
+            Contraseña
             <input
               className="loginForm__input"
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Contraseña"
               required
             />
           </label>
@@ -82,13 +82,14 @@ const Login = () => {
               </label>
             </span>
             <span className="loginForm__span">
+              Eres nuevo? &nbsp;
               <Link to="/sign-up" className="loginForm__link">
-                Eres nuevo? Crea tu cuenta aqui
+                Crea tu cuenta aqui
               </Link>
             </span>
           </div>
           <button type="submit" className="loginForm__btn">
-            Login →
+            Ingresar →
           </button>
         </form>
       </div>
