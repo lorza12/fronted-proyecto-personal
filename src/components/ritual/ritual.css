@@ -1,13 +1,14 @@
-.agendContainer{
-  background-color: #FAC77C;
+.ritualContainer{
+  background-color: #F9C67C;
   width: 100%;
+  padding-bottom: 80px;
 }
 
-.agendContainer__agend{
+.ritualContainer__ritual{
   position: relative;
 }
 
-.agendContainer img {
+.ritualContainer img {
   display: flex;
   width: 100%;
   height: 100%;
@@ -15,29 +16,30 @@
 
 }
 
-/* .agendContainer img:hover{
+/* .miniBannerContainer img:hover{
   transform: scale(1.5);
 } */
 
-.AgendVerMas{
+.ritualVerMas{
   position: absolute;
-  top: 80%;
-  right: 8%;
+  top: 85%;
+  left: 8%;
 }
 
-.agendContainer__agend p{
+.ritualContainer__ritual p{
   position: absolute;
-  bottom: 20%;
-  left: 5%;
-  top: -5%;
+  top: 3%;
+  right: 3%;
+  bottom: 10%;
   transition: all 300ms;
+
 }
 
-.agendContainer__agend p:hover{
+.ritualContainer__ritual p:hover{
   transform: scale(1.08);
 }
 
-.AgendVerMas{
+.ritualVerMas{
   color: #F8D9A6;
   background-color: #D7476B;
   font-size: 25px;
@@ -49,7 +51,6 @@
   transition: all 300ms;
 }
 
-.AgendVerMas:hover{
+.ritualVerMas:hover{
   transform: scale(1.08);
 }
-
