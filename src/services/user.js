@@ -10,4 +10,19 @@ async function getMyProfile() {
   throw new Error('Bad Credentials');
 }
 
+export async function modifyUser(_id, userData) {
+  const token = window.localStorage.getItem('token');
+  const res = await fetch(`${API_URL}/api/users/edit/${_id}`, {
+    method: 'PATCH',
+    headers: {
+      Accept: 'application/jason',
+      'Content-type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(userData),
+  });
+  if (res.ok) return res.json();
+  throw new Error('error user not modified!');
+}
+
 export default getMyProfile;

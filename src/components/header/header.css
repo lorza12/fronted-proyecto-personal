@@ -116,3 +116,18 @@ position: absolute;
 
 }
 
+.headerContainer1__profile p {
+  color: #D8476B;
+  margin: 0;
+}
+
+.buttons__header-profile {
+  background-color: #D8476B;
+  color: #F8D9A6;
+  border: 0;
+  width: 70px;
+  transition: all 300ms;
+  margin: 0;
+  height: 25px;
+}
+

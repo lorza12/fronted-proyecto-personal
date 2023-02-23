@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-closing-tag-location */
 import Types from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
@@ -14,7 +15,7 @@ import { selectAuth } from '../../feactures/login/authLoginSlice';
 const Header = ({ toggle, open }) => {
   const navegat = useNavigate();
   const dispatch = useDispatch();
-  const { isAuth } = useSelector(selectAuth);
+  const { isAuth, profile } = useSelector(selectAuth);
 
   const ClickRituls = () => {
     navegat('/');
@@ -33,6 +34,10 @@ const Header = ({ toggle, open }) => {
 
   const ClickLogin = () => {
     navegat('/login');
+  };
+
+  const handleClickProfile = () => {
+    navegat('/profile');
   };
 
   return (
@@ -85,7 +90,7 @@ const Header = ({ toggle, open }) => {
           </button>
         </div>
         <div className="hederContainer1__creatProducts">
-          {isAuth && (
+          {isAuth && profile.role === 'ADMIN' && (
             <button
               className="buttons__header"
               type="button"
@@ -102,6 +107,18 @@ const Header = ({ toggle, open }) => {
                 <RxAvatar color="#D8476B" />
               </p>
             </button>
+          </div>
+          <div className="headerContainer1__profile">
+            {isAuth && profile.role === 'USER' && (
+              <><p>hola: {profile.firstName}</p><button
+                className="buttons__header-profile"
+                type="button"
+                onClick={handleClickProfile}
+              >
+                Ver perfil
+              </button>
+              </>
+            )}
           </div>
           <div className="headerContainer1__icon-cart">
             <div className="cartt">
