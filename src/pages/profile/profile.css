@@ -1,0 +1,26 @@
+.profileContainer{
+    padding-bottom: 200px;
+}
+.profileContainer__section2{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.profileContainer__section2-data {
+    background-color: #f5b3b84d;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    
+}
+
+tr {
+   
+}
+
+.profileContainer__section1-title{
+    text-align: center;
+}
