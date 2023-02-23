@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable react/forbid-prop-types */
+import Types from 'prop-types';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Modal from '../../pages/modal/modal';
@@ -21,6 +22,11 @@ const RequireAuth = ({ children, roles }) => {
     return <Navigate to="/unauthorized" />;
   }
   return children;
+};
+
+RequireAuth.propTypes = {
+  children: Types.object.isRequired,
+  roles: Types.array.isRequired,
 };
 
 export default RequireAuth;

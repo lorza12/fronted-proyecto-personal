@@ -12,6 +12,7 @@ import Login from './pages/login/login';
 import CreateProduct from './pages/createProduct/createProduct';
 import RequireAuth from './feactures/login/requiereAuth';
 import Signup from './pages/Signup/Signup';
+import Profile from './pages/profile/profile';
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -35,8 +36,16 @@ const App = () => {
           <Route
             path="/create-product"
             element={(
-              <RequireAuth>
+              <RequireAuth roles={['ADMIN']}>
                 <CreateProduct />
+              </RequireAuth>
+          )}
+          />
+          <Route
+            path="/profile"
+            element={(
+              <RequireAuth roles={['USER']}>
+                <Profile />
               </RequireAuth>
           )}
           />
