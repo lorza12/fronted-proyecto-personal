@@ -269,7 +269,12 @@ const formPay = () => {
                 loading="eager"
                 alt=""
               />
-              <p>{element.tittle}</p>
+              <p>{element.tittle}
+                <br />
+                <br />
+                <br />
+                Cantidad: &nbsp; {element.amount}
+              </p>
               <p>
                 {' '}
                 $

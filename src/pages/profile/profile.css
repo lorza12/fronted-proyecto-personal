@@ -13,7 +13,8 @@
     background-color: #f5b3b84d;
     width: 500px;
     height: 300px;
-    padding: 10px;
+    padding: 30px;
+    padding-bottom: 80px;
     
 }
 
@@ -23,4 +24,27 @@ tr {
 
 .profileContainer__section1-title{
     text-align: center;
+}
+
+.profileContainer__editButton{
+    color: white;
+    background-color: #D8476B;
+    border: none;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.profileContainer__sendData{
+    color: white;
+    background-color: #D8476B;
+    border: none;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.profileConstainer__destinatarios{
+    width: 300px;
+  height: 30px;
 }
