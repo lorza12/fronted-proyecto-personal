@@ -41,7 +41,8 @@ const profile = () => {
         {profiles && (
         <div className="profileContainer__section1-title">
           <h1>Mi cuenta</h1>
-          <p>hola {profiles.firstName} aqui podras ver y editar los datos de tu cuenta</p>
+          <p>hola {profiles.firstName} aqui podras
+           ver y editar los datos de tu cuenta</p>
         </div>
         )}
       </section>
@@ -63,6 +64,7 @@ const profile = () => {
               </tr><hr /></>)}
           <button
             type="submit"
+            className="profileContainer__editButton"
             onClick={toggle}
           >
             Editar perfil
@@ -74,16 +76,22 @@ const profile = () => {
             >
               <label htmlFor="firstName" className="signupForm__label">
                 Nuevo nombre
+                <br />
                 <input
                   type="text"
                   name="firstName"
-                  className=""
+                  className="profileConstainer__destinatarios"
                   placeholder="Ingrese su nuevo nombre"
                   required
                   id="firstName"
                 />
               </label>
-              <button type="submit">
+              <br />
+              <br />
+              <button
+                type="submit"
+                className="profileContainer__sendData"
+              >
                 Enviar datos
               </button>
             </form>
