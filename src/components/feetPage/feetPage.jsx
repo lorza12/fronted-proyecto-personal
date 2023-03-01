@@ -42,29 +42,29 @@ const footer = () => (
         <div className="footerContainer__velefant__icons">
           <div className="lineaVelefant">
             <p>
-              <GoLocation color="E58624" />
+              <GoLocation color="E58624" fontSize="20px" />
             </p>
             <p className="parrafoVelefant"> Cali,Colombia</p>
           </div>
           <div className="lineaVelefant">
             <p>
-              <HiOutlineMail color="E58624" />
+              <HiOutlineMail color="E58624" fontSize="20px" />
             </p>
             <p className="parrafoVelefant"> velefant@gmail.com</p>
             <div />
           </div>
           <div className="lineaVelefant">
             <p>
-              <ImWhatsapp color="E58624" />
+              <ImWhatsapp color="E58624" fontSize="20px" />
             </p>
             <p className="parrafoVelefant"> +57 300 443 9205</p>
           </div>
           <div className="redes">
             <p>
-              <FiFacebook color="E58624" />
+              <FiFacebook color="E58624" fontSize="30px" />
             </p>
             <p>
-              <AiOutlineInstagram color="E58624" />
+              <AiOutlineInstagram color="E58624" fontSize="30px" />
             </p>
           </div>
         </div>
