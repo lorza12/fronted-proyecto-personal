@@ -1,11 +1,16 @@
 .badge-cart-items{
-  width: 15px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
   color: white;
   padding: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #D8476B;
   border: 10px;
   border-color: black;
   text-align: center;
+}
+
+.bodge{
+  margin-bottom: 20px;
 }
