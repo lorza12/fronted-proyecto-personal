@@ -16,13 +16,18 @@ import Profile from './pages/profile/profile';
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
   const toggle = () => {
     setOpen(!open);
   };
+  const toggle2 = () => {
+    setOpen2(!open2);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <Header toggle={toggle} open={open} />
+        <Header toggle={toggle} open={open} toggle2={toggle2} open2={open2} />
       </header>
       <section className="App-home">
         <Routes>
