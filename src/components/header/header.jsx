@@ -6,13 +6,16 @@ import './header.css';
 import { RxAvatar } from 'react-icons/rx';
 import { TfiShoppingCartFull } from 'react-icons/tfi';
 import { BsSearch } from 'react-icons/bs';
+import { MdOutlineStorage } from 'react-icons/md';
 import velefantLogo from './assets/logo-02.png';
 import { setProducts } from '../../feactures/products/productoSlice';
 import ShoppingCart from '../shoppingCart/shoppingCart';
 import Badge from '../badge/badge';
 import { selectAuth } from '../../feactures/login/authLoginSlice';
 
-const Header = ({ toggle, open }) => {
+const Header = ({
+  toggle, open, toggle2, open2,
+}) => {
   const navegat = useNavigate();
   const dispatch = useDispatch();
   const { isAuth, profile } = useSelector(selectAuth);
@@ -41,14 +44,23 @@ const Header = ({ toggle, open }) => {
   };
 
   return (
-    <section>
+    <section className="headerContainer">
       <section className="hederContainer1">
         <div className="hederContainer1__search">
           <p className="ppp">
             <BsSearch color="#D8476B" />
           </p>
         </div>
-        <div className="hederContainer1__products">
+        <div className="miniContainer3">
+          <div className="miniContainer3__img1">
+            <button type="button" className="butto_cart" onClick={toggle2}>
+              <p className="ppp">
+                <MdOutlineStorage color="#D8476B" />
+              </p>
+            </button>
+          </div>
+        </div>
+        <div className="hederContainer1__namesPages">
           <button
             className="buttons__header"
             type="button"
@@ -57,7 +69,7 @@ const Header = ({ toggle, open }) => {
             Productos
           </button>
         </div>
-        <div className="hederContainer1__kits">
+        <div className="hederContainer1__namesPages">
           <button
             className="buttons__header"
             type="button"
@@ -71,7 +83,7 @@ const Header = ({ toggle, open }) => {
             <img src={velefantLogo} loading="eager" alt="logo" />
           </Link>
         </div>
-        <div className="hederContainer1__products">
+        <div className="hederContainer1__namesPages">
           <button
             className="buttons__header"
             type="button"
@@ -80,7 +92,7 @@ const Header = ({ toggle, open }) => {
             Rituales
           </button>
         </div>
-        <div className="hederContainer1__kits">
+        <div className="hederContainer1__namesPages">
           <button
             className="buttons__header"
             type="button"
@@ -89,7 +101,7 @@ const Header = ({ toggle, open }) => {
             Blog
           </button>
         </div>
-        <div className="hederContainer1__creatProducts">
+        <div className="hederContainer1__namesPages">
           {isAuth && profile.role === 'ADMIN' && (
             <button
               className="buttons__header"
@@ -146,6 +158,29 @@ const Header = ({ toggle, open }) => {
           )}
         </div>
       </section>
+      <section className="headerContainer1__nav-pages">
+        <div className="headerContainer1__cart-intoo">
+          {open2 && (
+          <><button
+            className="buttons__header"
+            type="button"
+            onClick={ClickProducts}
+          >
+            Productos
+          </button>
+            <div>
+              <hr />
+            </div>
+            <button
+              className="buttons__header"
+              type="button"
+              onClick={ClickProducts}
+            >
+              Kits
+            </button></>
+          )}
+        </div>
+      </section>
     </section>
   );
 };
@@ -153,6 +188,8 @@ const Header = ({ toggle, open }) => {
 Header.propTypes = {
   toggle: Types.func.isRequired,
   open: Types.bool.isRequired,
+  toggle2: Types.func.isRequired,
+  open2: Types.bool.isRequired,
 };
 
 export default Header;
