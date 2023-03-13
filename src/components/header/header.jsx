@@ -45,19 +45,41 @@ const Header = ({
 
   return (
     <section className="headerContainer">
-      <section className="hederContainer1">
-        <div className="hederContainer1__search">
-          <p className="ppp">
-            <BsSearch color="#D8476B" />
-          </p>
+      <div className="headercontainer2">
+        <div className="hederContainer1__namesPages">
+          {isAuth && profile.role === 'ADMIN' && (
+          <button
+            className="buttons__header"
+            type="button"
+            onClick={ClickCreateProduct}
+          >
+            Agregar producto
+          </button>
+          )}
         </div>
-        <div className="miniContainer3">
-          <div className="miniContainer3__img1">
-            <button type="button" className="butto_cart" onClick={toggle2}>
-              <p className="ppp">
-                <MdOutlineStorage color="#D8476B" />
-              </p>
-            </button>
+        <div className="headerContainer2__profile">
+          {isAuth && profile.role === 'USER' && (
+          <><p>hola {profile.firstName}</p>&nbsp;<button
+            className="buttons__header-profile"
+            type="button"
+            onClick={handleClickProfile}
+          >
+            Ver perfil
+          </button>
+          </>
+          )}
+        </div>
+      </div>
+      <section className="hederContainer1">
+        <div className="headerContainer1__searcAndMd">
+          <div className="miniContainer3">
+            <div className="miniContainer3__img1">
+              <button type="button" className="butto_cart" onClick={toggle2}>
+                <p className="ppp">
+                  <MdOutlineStorage color="#D8476B" />
+                </p>
+              </button>
+            </div>
           </div>
         </div>
         <div className="hederContainer1__namesPages">
@@ -101,36 +123,18 @@ const Header = ({
             Blog
           </button>
         </div>
-        <div className="hederContainer1__namesPages">
-          {isAuth && profile.role === 'ADMIN' && (
-            <button
-              className="buttons__header"
-              type="button"
-              onClick={ClickCreateProduct}
-            >
-              Agregar producto
-            </button>
-          )}
-        </div>
         <div className="hederContainer1__extra">
-          <div>
+          <div className="hederContainer1__search">
+            <p className="pppp">
+              <BsSearch color="#D8476B" />
+            </p>
+          </div>
+          <div className="hederContainer1__login">
             <button type="button" className="butto_cart" onClick={ClickLogin}>
               <p className="ppp">
                 <RxAvatar color="#D8476B" />
               </p>
             </button>
-          </div>
-          <div className="headerContainer1__profile">
-            {isAuth && profile.role === 'USER' && (
-              <><p>hola: {profile.firstName}</p><button
-                className="buttons__header-profile"
-                type="button"
-                onClick={handleClickProfile}
-              >
-                Ver perfil
-              </button>
-              </>
-            )}
           </div>
           <div className="headerContainer1__icon-cart">
             <div className="cartt">
@@ -161,7 +165,7 @@ const Header = ({
       <section className="headerContainer1__nav-pages">
         <div className="headerContainer1__cart-intoo">
           {open2 && (
-          <><button
+          <><><><button
             className="buttons__header"
             type="button"
             onClick={ClickProducts}
@@ -177,7 +181,20 @@ const Header = ({
               onClick={ClickProducts}
             >
               Kits
-            </button></>
+            </button>
+          </><button
+            className="buttons__header"
+            type="button"
+            onClick={ClickLogin}
+          >
+            Iniciar sesion
+          </button></><button
+            className="buttons__header"
+            type="button"
+            onClick={handleClickProfile}
+          >
+            Perfil
+          </button></>
           )}
         </div>
       </section>
