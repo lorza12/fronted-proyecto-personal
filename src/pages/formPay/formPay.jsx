@@ -99,8 +99,8 @@ const formPay = () => {
         <form onSubmit={handleSubmit}>
           <p>
             Informacion de
-            contacto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <spas className="span1">¿Ya tienes una cuenta?</spas>
+            contacto <span />
+            <span className="span1">¿Ya tienes una cuenta?</span>
 &nbsp;
             <Link to="/login" className="goLogin">
               <spas className="span">inicia sesion</spas>

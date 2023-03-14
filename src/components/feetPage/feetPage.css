@@ -1,8 +1,9 @@
 .footerContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
+  padding: 10px;
+
 }
 
 .listsFooter{
