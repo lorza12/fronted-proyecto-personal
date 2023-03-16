@@ -5,6 +5,7 @@
 
 .infoClientContainer__vela{
   position: relative;
+  width: 100%;
 }
 
 .miniBannerContainer img {
@@ -14,10 +15,6 @@
   transition: all 300ms;
 
 }
-
-/* .miniBannerContainer img:hover{
-  transform: scale(1.5);
-} */
 
 .buttonVerMas{
   position: absolute;
