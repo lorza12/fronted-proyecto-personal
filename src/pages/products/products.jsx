@@ -44,16 +44,20 @@ const products = () => {
           <div className="productsContainer__products">
             {data.map((element) => (
               <div className="productsContainer__cart" key={element._id}>
-                <img className="" src={element.image} loading="eager" alt="" />
-                <button
-                  type="button"
-                  className="button__product"
-                  onClick={() => {
-                    handleProduct(element._id);
-                  }}
-                >
-                  Detalle del producto
-                </button>
+                <div>
+                  <img className="" src={element.image} loading="eager" alt="" />
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="button__product"
+                    onClick={() => {
+                      handleProduct(element._id);
+                    }}
+                  >
+                    Detalle del producto
+                  </button>
+                </div>
               </div>
 
             ))}
