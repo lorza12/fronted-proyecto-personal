@@ -28,8 +28,8 @@ const Signup = () => {
 
     try {
       const action = createUser({
-        firstName: firstName.value.toUpperCase(),
-        lastName: lastName.value.toUpperCase(),
+        firstName: firstName.value,
+        lastName: lastName.value,
         email: email.value.toLowerCase(),
         password: password.value,
         birthday: birthday.value,
