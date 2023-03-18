@@ -61,10 +61,10 @@ const footer = () => (
           </div>
           <div className="redes">
             <p>
-              <FiFacebook color="E58624" fontSize="30px" />
+              <a title="Los Tejos" href="https://www.facebook.com/profile.php?id=100064830849350&mibextid=LQQJ4d"> <FiFacebook color="E58624" fontSize="30px" /></a>
             </p>
             <p>
-              <AiOutlineInstagram color="E58624" fontSize="30px" />
+              <a title="Los Tejos" href="https://instagram.com/velefant_?igshid=YmMyMTA2M2Y="> <AiOutlineInstagram color="E58624" fontSize="30px" /></a>
             </p>
           </div>
         </div>
